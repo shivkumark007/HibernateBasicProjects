@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+
+<class name = "com.entity.College" table = "College">
+
+<id name = "id" column = "C_Id"></id>
+<property name = "name" column = "C_Name"></property>
+<property name = "rating" column = "C_Rating"></property>
+</class>
+</hibernate-mapping>
