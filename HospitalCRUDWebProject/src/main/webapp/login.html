@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Welcome to Patient Portal</title>
+</head>
+<body>
+
+    <h1>Insert Patient Details:</h1>
+    <form action="InsertPatientServlet" method="get">
+        <label for="id">Enter Id: </label>
+        <input type="text" id="insert-id" name="id">
+        <br>
+
+        <label for="name">Enter Name: </label>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <label for="email">Enter E-Mail: </label>
+        <input type="text" id="email" name="email">
+        <br>
+
+        <label for="date">Enter Date (YYYY-MM-DD): </label>
+        <input type="text" id="date" name="date">
+        <br>
+
+        <label for="drname">Enter Doctor Name: </label>
+        <input type="text" id="drname" name="drname">
+        <br>
+
+        <label for="symptoms">Enter Symptoms: </label>
+        <input type="text" id="symptoms" name="symptoms">
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Cancel Appointment:</h1>
+    <form action="DeletePatientServlet" method="get">
+        <label for="delete-id">Enter Id: </label>
+        <input type="text" id="delete-id" name="id">
+        <br>
+        <input type="submit" value="Cancel Appointment">
+    </form>
+
+    <h1>Update Patient Details:</h1>
+    <form action="Update.jsp" method="get">
+        <label for="update-id">Enter Id: </label>
+        <input type="text" id="update-id" name="id">
+        <br>
+
+        <label for="name">Enter Name: </label>
+        <input type="text" id="update-name" name="name">
+        <br>
+
+        <label for="email">Enter E-Mail: </label>
+        <input type="text" id="update-email" name="email">
+        <br>
+
+        <label for="date">Enter Date (YYYY-MM-DD): </label>
+        <input type="text" id="update-date" name="date">
+        <br>
+
+        <label for="drname">Enter Doctor Name: </label>
+        <input type="text" id="update-drname" name="drname">
+        <br>
+
+        <label for="symptoms">Enter Symptoms: </label>
+        <input type="text" id="update-symptoms" name="symptoms">
+        <br>
+
+        <input type="submit" value="Update">
+    </form>
+
+    <h1>Search Patient by ID:</h1>
+    <form action="ReadPatientServlet" method="get">
+        <label for="read">Enter Id: </label>
+        <input type="text" id="read" name="id">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+
+    <h1 style="text-align: center;">
+        <a href="Read.jsp">View All Patients</a>
+    </h1>
+
+</body>
+</html>
